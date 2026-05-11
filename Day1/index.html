@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cooking–WebApp</title>
+        <title>Carbonara</title>
         <link rel="stylesheet" type="text/css" href="./style.css" />
     </head>
     <header>
@@ -12,6 +12,7 @@
     <body>
         <h2>Einleitung</h2>
         <img
+            class="SpaghettiPicture"
             src="https://media.bettybossi.ch/image/992382728798/image_v675ibt1op26t07qlbh34aos7j/-FWEBP-Ro:5,w:2250,h:1800,n:default"
             alt="Spaghetti Carbonara"
         />
@@ -21,49 +22,49 @@
             Italianità!
         </p>
         <h2>Zutaten</h2>
-        <table>
+        <table class="ZutatenListe">
             <thead>
                 <tr>
-                    <th>Zutat</th>
-                    <th>Menge</th>
+                    <th class="ZutatenListe-header">Zutat</th>
+                    <th class="ZutatenListe-header">Menge</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Spaghetti</td>
-                    <td>400g</td>
+                    <td class="ZutatenListe-zutat">Spaghetti</td>
+                    <td class="ZutatenListe-menge">400g</td>
                 </tr>
                 <tr>
-                    <td>Salzwasser</td>
-                    <td>1dl nach dem Kochen</td>
+                    <td class="ZutatenListe-zutat">Salzwasser</td>
+                    <td class="ZutatenListe-menge">1dl nach dem Kochen</td>
                 </tr>
                 <tr>
-                    <td>Zwiebel</td>
-                    <td>1</td>
+                    <td class="ZutatenListe-zutat">Zwiebel</td>
+                    <td class="ZutatenListe-menge">1</td>
                 </tr>
                 <tr>
-                    <td>Bratspeck</td>
-                    <td>200g</td>
+                    <td class="ZutatenListe-zutat">Bratspeck</td>
+                    <td class="ZutatenListe-menge">200g</td>
                 </tr>
                 <tr>
-                    <td>Eier</td>
-                    <td>4</td>
+                    <td class="ZutatenListe-zutat">Eier</td>
+                    <td class="ZutatenListe-menge">4</td>
                 </tr>
                 <tr>
-                    <td>Parmesan</td>
-                    <td>100g</td>
+                    <td class="ZutatenListe-zutat">Parmesan</td>
+                    <td class="ZutatenListe-menge">100g</td>
                 </tr>
                 <tr>
-                    <td>Muskat</td>
-                    <td>Wenig</td>
+                    <td class="ZutatenListe-zutat">Muskat</td>
+                    <td class="ZutatenListe-menge">Wenig</td>
                 </tr>
                 <tr>
-                    <td>Salz</td>
-                    <td>0.25TL</td>
+                    <td class="ZutatenListe-zutat">Salz</td>
+                    <td class="ZutatenListe-menge">0.25TL</td>
                 </tr>
                 <tr>
-                    <td>Pfeffer</td>
-                    <td>Wenig</td>
+                    <td class="ZutatenListe-zutat">Pfeffer</td>
+                    <td class="ZutatenListe-menge">Wenig</td>
                 </tr>
             </tbody>
         </table>
@@ -71,13 +72,13 @@
         <p>Personen anzahl: 1</p>
 
         <h2>Rezept</h2>
-        <ol>
-            <li>
+        <ol class="Rezept">
+            <li class="Rezept-schritt">
                 Spaghetti im siedenden Salzwasser al dente kochen, ca. 1 dl
                 Kochwasser beiseite stellen (siehe Hinweis), Spaghetti
                 abtropfen.
             </li>
-            <li>
+            <li class="Rezept-schritt">
                 Zwiebel schälen, fein hacken. Speck in ca. 2 cm breite Streifen
                 schneiden, in einer beschichteten Bratpfanne ohne Fett langsam
                 knusprig braten. Herausnehmen, beiseite stellen, Hitze
@@ -85,7 +86,7 @@
                 Mit den Spaghetti und dem Speck in die grosse Pfanne geben,
                 heiss werden lassen.
             </li>
-            <li>
+            <li class="Rezept-schritt">
                 Pfanne von der Platte nehmen. Eier und Käse gut verrühren,
                 würzen, über die Spaghetti giessen, sorgfältig mischen, nur noch
                 heiss werden lassen (die Eier sollen nicht gerinnen), sofort
@@ -94,7 +95,10 @@
         </ol>
 
         <h2>Andere Tolle Pasta Rezepte</h2>
-        <a href="https://www.bettybossi.ch/de/magazin/artikel/pasta-gerichte/">
+        <a
+            href="https://www.bettybossi.ch/de/magazin/artikel/pasta-gerichte/"
+            class="PastaGerichte"
+        >
             Rezept Sammlung
         </a>
     </body>
