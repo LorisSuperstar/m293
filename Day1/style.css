@@ -1,0 +1,90 @@
+/* STYLEGUIDE
+   -----------------------------------------
+   Farben:       Hintergrund: Weiß, Akzent: #d4a373 (Beige), Border: #ddd
+   Typografie:   Montserrat, Text linksbündig
+   Abstände:     Tabellen margin 2rem
+   -----------------------------------------
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+}
+
+header {
+    background-color: #d4a373;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 100%;
+    display: block;
+    margin: 1.5rem 0;
+    animation: rotation 1s linear infinite;
+    pointer-events: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+th,
+td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #d4a373;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+ol {
+    padding-left: 1.2rem;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #d4a373;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+a:hover {
+    border-bottom: 2px solid #d4a373;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
