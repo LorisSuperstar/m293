@@ -33,8 +33,6 @@ img {
     border-radius: 100%;
     display: block;
     margin: 1.5rem 0;
-    animation: rotation 1s linear infinite;
-    pointer-events: none;
 }
 
 table {
@@ -78,13 +76,4 @@ a {
 
 a:hover {
     border-bottom: 2px solid #d4a373;
-}
-
-@keyframes rotation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
 }
