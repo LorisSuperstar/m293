@@ -1,41 +1,57 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Musik</title>
-    <link rel="stylesheet" type="text/css" href="./Style.css" />
-  </head>
-  <body>
-    <header>
-      <h1 class="Title">Meine Musik</h1>
-      <nav>
-        <a href="Index.html"><button class="MediaType">Home</button></a>
-        <a href="Videos.html"><button class="MediaType">Videos</button></a>
-        <a href="Games.html"><button class="MediaType">Games</button></a>
-      </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Musik</title>
+        <link rel="stylesheet" type="text/css" href="./Style.css" />
+    </head>
+    <body>
+        <header>
+            <h1 class="Title">Meine Musik</h1>
+            <nav>
+                <a href="Index.html" class="MediaType">Home</a>
+                <a href="Videos.html" class="MediaType">Videos</a>
+                <a href="Games.html" class="MediaType">Games</a>
+            </nav>
+        </header>
 
-    <main class="container">
+        <main class="container">
+            <section id="collection" class="grid">
+                <article class="card">
+                    <a
+                        href="https://en.wikipedia.org/wiki/Around_the_World_(Daft_Punk_song)"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div class="cover-wrapper">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/en/6/6f/Daftpunk-homework.jpg"
+                                alt="Around the World - Daft Punk"
+                            />
+                        </div>
+                        <h3 class="FillerTitle">Around the World</h3>
+                    </a>
+                    <p class="Filler">Daft Punk — 1997</p>
+                </article>
 
-      <section id="collection" class="grid">
-        <article class="card">
-          <a href="https://en.wikipedia.org/wiki/Around_the_World_(Daft_Punk_song)" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/en/6/6f/Daftpunk-homework.jpg" alt="Around the World - Daft Punk" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22300%22><rect fill=%22%23f3f4f6%22 width=%22100%25%22 height=%22100%25%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23888%22 font-family=%22Arial%22 font-size=%2224%22>Cover%20nicht%20verf%C3%BCgbar</text></svg>' />
-            <h3 class="FillerTitle">Around the World</h3>
-          </a>
-          <p class="Filler">Daft Punk — 1997</p>
-        </article>
-
-        <article class="card">
-          <a href="https://en.wikipedia.org/wiki/Yellow_Submarine_(album)" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/en/6/67/BeatlesYellowSubmarineAlbumCover.jpg" alt="Yellow Submarine" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22300%22><rect fill=%22%23f3f4f6%22 width=%22100%25%22 height=%22100%25%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23888%22 font-family=%22Arial%22 font-size=%2224%22>Cover%20nicht%20verf%C3%BCgbar</text></svg>' />
-            <h3 class="FillerTitle">Yellow Submarine</h3>
-          </a>
-          <p class="Filler">The Beatles — 1969</p>
-        </article>
-      </section>
-    </main>
-
-  </body>
+                <article class="card">
+                    <a
+                        href="https://en.wikipedia.org/wiki/Yellow_Submarine_(album)"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div class="cover-wrapper">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/en/6/67/BeatlesYellowSubmarineAlbumCover.jpg"
+                                alt="Yellow Submarine"
+                            />
+                        </div>
+                        <h3 class="FillerTitle">Yellow Submarine</h3>
+                    </a>
+                    <p class="Filler">The Beatles — 1969</p>
+                </article>
+            </section>
+        </main>
+    </body>
 </html>
