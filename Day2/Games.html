@@ -1,11 +1,91 @@
 <!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cool Games</title>
-        <link rel="stylesheet" type="text/css" href="./style.css" />
-    </head>
-    <h1>Cool Games</h1>
-    <body></body>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games</title>
+    <link rel="stylesheet" type="text/css" href="./Style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="Title">Lieblingsspiele</h1>
+      <nav>
+        <a href="Index.html"><button class="MediaType">Home</button></a>
+        <a href="Musik.html"><button class="MediaType">Musik</button></a>
+        <a href="Videos.html"><button class="MediaType">Videos</button></a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div style="text-align:center; margin-bottom:1vh;">
+        <button id="layoutToggle" class="MediaType">Wechsel zu Flex-Layout</button>
+      </div>
+
+      <section id="collection" class="grid">
+        <article class="card">
+          <a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg" alt="The Witcher 3" />
+            <h3 class="FillerTitle">The Witcher 3</h3>
+          </a>
+          <p class="Filler">CD Projekt — 2015</p>
+        </article>
+
+        <article class="card">
+          <a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg" alt="Cyberpunk 2077" />
+            <h3 class="FillerTitle">Cyberpunk 2077</h3>
+          </a>
+          <p class="Filler">CD Projekt — 2020</p>
+        </article>
+
+        <article class="card">
+          <a href="https://store.steampowered.com/app/578080/PLAYERUNKNOWNS_BATTLEGROUNDS/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/4f/PLAYERUNKNOWN%27S_BATTLEGROUNDS_cover.jpg" alt="PUBG" />
+            <h3 class="FillerTitle">PUBG</h3>
+          </a>
+          <p class="Filler">Bluehole — 2017</p>
+        </article>
+
+        <article class="card">
+          <a href="https://store.steampowered.com/app/753/CounterStrike_Global_Offensive/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/en/5/57/Counter-Strike_Global_Offensive_cover_art.jpg" alt="CS:GO" />
+            <h3 class="FillerTitle">CS:GO</h3>
+          </a>
+          <p class="Filler">Valve — 2012</p>
+        </article>
+
+        <article class="card">
+          <a href="https://store.steampowered.com/app/620/Dead_by_Daylight/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/4b/Dead_by_Daylight_cover_art.jpg" alt="Dead by Daylight" />
+            <h3 class="FillerTitle">Dead by Daylight</h3>
+          </a>
+          <p class="Filler">Behaviour Interactive — 2016</p>
+        </article>
+
+        <article class="card">
+          <a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png" alt="GTA V" />
+            <h3 class="FillerTitle">GTA V</h3>
+          </a>
+          <p class="Filler">Rockstar North — 2013</p>
+        </article>
+      </section>
+    </main>
+
+    <script>
+      const btn = document.getElementById('layoutToggle');
+      const col = document.getElementById('collection');
+      btn.addEventListener('click', () => {
+        if (col.classList.contains('grid')) {
+          col.classList.remove('grid');
+          col.classList.add('flex');
+          btn.textContent = 'Wechsel zu Grid-Layout';
+        } else {
+          col.classList.remove('flex');
+          col.classList.add('grid');
+          btn.textContent = 'Wechsel zu Flex-Layout';
+        }
+      });
+    </script>
+  </body>
 </html>
