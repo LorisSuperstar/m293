@@ -17,9 +17,6 @@
     </header>
 
     <main class="container">
-      <div style="text-align:center; margin-bottom:1vh;">
-        <button id="layoutToggle" class="MediaType">Wechsel zu Flex-Layout</button>
-      </div>
 
       <section id="collection" class="grid">
         <article class="card">
@@ -40,20 +37,5 @@
       </section>
     </main>
 
-    <script>
-      const btn = document.getElementById('layoutToggle');
-      const col = document.getElementById('collection');
-      btn.addEventListener('click', () => {
-        if (col.classList.contains('grid')) {
-          col.classList.remove('grid');
-          col.classList.add('flex');
-          btn.textContent = 'Wechsel zu Grid-Layout';
-        } else {
-          col.classList.remove('flex');
-          col.classList.add('grid');
-          btn.textContent = 'Wechsel zu Flex-Layout';
-        }
-      });
-    </script>
   </body>
 </html>
