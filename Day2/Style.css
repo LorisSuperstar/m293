@@ -1,0 +1,22 @@
+header {
+    justify-content: center;
+
+    border: 5px;
+    border-style: solid;
+    display: flex;
+    flex-direction: row;
+}
+.Title {
+    text-align: center;
+}
+.MediaType {
+    margin-left: 3vh;
+    color: red;
+    background-color: whitesmoke;
+}
+.Filler {
+    font-size: 40px;
+}
+.FillerTitle {
+    font-size: 60px;
+}
