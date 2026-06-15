@@ -22,22 +22,33 @@
   <main class="container">
     <section class="hero">
       <h2>Neuheiten & Beliebte Produkte</h2>
-      <div id="featured" class="products-grid"></div>
+      <div class="products-grid">
+        <article class="card"><a href="product-p1.html"><img src="images/placeholder.svg" alt="Kopfhörer X1"><h4>Kopfhörer X1</h4><p class="price">€59.99</p></a><button onclick="addToCart('p1'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
+        <article class="card"><a href="product-p2.html"><img src="images/placeholder.svg" alt="Smartphone S"><h4>Smartphone S</h4><p class="price">€399.00</p></a><button onclick="addToCart('p2'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
+        <article class="card"><a href="product-p3.html"><img src="images/placeholder.svg" alt="Rucksack Travel"><h4>Rucksack Travel</h4><p class="price">€79.50</p></a><button onclick="addToCart('p3'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
+        <article class="card"><a href="product-p4.html"><img src="images/placeholder.svg" alt="Sneaker Run"><h4>Sneaker Run</h4><p class="price">€89.99</p></a><button onclick="addToCart('p4'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
+      </div>
     </section>
 
     <section class="categories">
       <h3>Kategorien</h3>
-      <div id="categories-list" class="chips"></div>
+      <div class="chips">
+        <a class="chip" href="products.html#Elektronik">Elektronik</a>
+        <a class="chip" href="products.html#Outdoor">Outdoor</a>
+        <a class="chip" href="products.html#Fashion">Fashion</a>
+        <a class="chip" href="products.html#Home">Home</a>
+        <a class="chip" href="products.html#Sport">Sport</a>
+      </div>
     </section>
 
     <section class="newsletter">
       <h3>Newsletter</h3>
-      <form id="newsletter-form">
-        <label for="email">E-Mail</label>
-        <input id="email" name="email" type="email" required placeholder="name@beispiel.de" />
-        <button>Abonnieren</button>
+      <form>
+        <label for="email-static">E-Mail</label>
+        <input id="email-static" name="email" type="email" required placeholder="name@beispiel.de" />
+        <button disabled>Abonnieren (nur mit JavaScript)</button>
       </form>
-      <p id="newsletter-msg" class="muted"></p>
+      <p class="muted">Newsletter-Anmeldung ist nur mit aktivem JavaScript möglich.</p>
     </section>
   </main>
 
@@ -47,7 +58,7 @@
     </div>
   </footer>
 
-  <script src="js/products.js"></script>
   <script src="js/cart.js"></script>
+  <script src="js/site.js"></script>
 </body>
 </html>

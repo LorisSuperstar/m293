@@ -7,4 +7,4 @@ Diese Projektbasis enthält:
 
 Optional: Weiteres Styling, Bilder-Videos ersetzen, Deployment (z.B. GitHub Pages).
 
-KI-Einsatz: Während der Entwicklung wurden Copilot und ein Chat-KI für Text- und Layoutvorschläge genutzt; dokumentation folgt im docs/.
+KI-Einsatz: Während der Entwicklung wurden GitHub Copilot und ChatGPT für Code-, Layout- und Dokumentationsunterstützung genutzt. Siehe ki_documentation.md für Details.
