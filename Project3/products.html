@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Produkte — Mein Webshop</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header container">
+    <h1 class="logo">Produkte</h1>
+    <nav>
+      <a href="Index.html">Start</a>
+      <a href="products.html" aria-current="page">Produkte</a>
+      <a href="contact.html">Kontakt</a>
+      <a href="cart.html">Warenkorb (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <label for="category-select">Kategorie:</label>
+      <select id="category-select">
+        <option value="all">Alle</option>
+      </select>
+    </section>
+
+    <section id="products" class="products-grid"></section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>&copy; 2026 Mein Webshop</p>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

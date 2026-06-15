@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mein Webshop — Startseite</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Mein Webshop</h1>
+      <nav>
+        <a href="Index.html" aria-current="page">Start</a>
+        <a href="products.html">Produkte</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="cart.html">Warenkorb (<span id="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Neuheiten & Beliebte Produkte</h2>
+      <div id="featured" class="products-grid"></div>
+    </section>
+
+    <section class="categories">
+      <h3>Kategorien</h3>
+      <div id="categories-list" class="chips"></div>
+    </section>
+
+    <section class="newsletter">
+      <h3>Newsletter</h3>
+      <form id="newsletter-form">
+        <label for="email">E-Mail</label>
+        <input id="email" name="email" type="email" required placeholder="name@beispiel.de" />
+        <button>Abonnieren</button>
+      </form>
+      <p id="newsletter-msg" class="muted"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Mein Webshop</p>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
