@@ -1,12 +1,82 @@
 [
-  {"id":"p1","title":"Urban Runner Pro","category":"Sneaker","price":129.99,"image":"images/placeholder.svg","description":"Hochwertige Laufschuhe mit Gel-Dämpfung und atmungsaktivem Mesh. Perfekt für tägliche Läufe und urbane Abenteuer."},
-  {"id":"p2","title":"Classic Leather Oxford","category":"Business","price":199.99,"image":"images/placeholder.svg","description":"Elegante Lederschuhe im klassischen Oxford-Stil. Ideal für Büro und formelle Anlässe."},
-  {"id":"p3","title":"Hiking Mountain Boot","category":"Outdoor","price":189.50,"image":"images/placeholder.svg","description":"Robuste Wanderstiefel mit wasserfester Membran und rutschfesten Sohlen für Bergtouren."},
-  {"id":"p4","title":"Summer Beach Sandal","category":"Sandalen","price":49.99,"image":"images/placeholder.svg","description":"Bequeme Strandsandalen aus hautfreundlichem Material mit ergonomischem Fußbett."},
-  {"id":"p5","title":"Winter Snow Boot","category":"Winter","price":159.90,"image":"images/placeholder.svg","description":"Wärmeisolierte Winterstiefel mit Gripp-Sohle und warmem Innenfutter für eisige Bedingungen."},
-  {"id":"p6","title":"Basketball Court Shoe","category":"Sport","price":145.00,"image":"images/placeholder.svg","description":"Performance-Basketballschuh mit hohem Schaft und Knöchelstütze."},
-  {"id":"p7","title":"Yoga & Pilates Slipper","category":"Training","price":59.99,"image":"images/placeholder.svg","description":"Leichte Trainingsschuhe mit Barfuß-Gefühl und rutschfester Sohle."},
-  {"id":"p8","title":"Premium Leather Loafer","category":"Casual","price":169.00,"image":"images/placeholder.svg","description":"Hochwertige Lederslipper mit klassischem Design und edlem Finish."},
-  {"id":"p9","title":"Skateboard Chuck Style","category":"Sneaker","price":79.99,"image":"images/placeholder.svg","description":"Ikonischer Canvas-Sneaker mit Gummikappe, ideal zum Skaten und für urbanen Style."},
-  {"id":"p10","title":"Trail Running Shoe","category":"Sport","price":154.50,"image":"images/placeholder.svg","description":"Leichte und wendige Trailrunner mit aggressivem Profil für Off-Road-Läufe."}
+    {
+        "id": "p1",
+        "title": "Urban Runner Pro",
+        "category": "Sneaker",
+        "price": 129.99,
+        "image": "https://lorissuperstar.github.io/m293/Images/ShoePic1.jpg",
+        "description": "Hochwertige Laufschuhe mit Gel-Dämpfung und atmungsaktivem Mesh. Perfekt für tägliche Läufe und urbane Abenteuer."
+    },
+    {
+        "id": "p2",
+        "title": "Classic Leather Oxford",
+        "category": "Business",
+        "price": 199.99,
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.cheaney.co.uk%2Fimages%2Fcheaney-lime-classic-oxford-in-black-calf-leather-leather-sole-p34-1274_image.jpg&f=1&nofb=1&ipt=af51ec5272cf0f424face2d45b43a4c90c69c95af2da121723320a963f619597",
+        "description": "Elegante Lederschuhe im klassischen Oxford-Stil. Ideal für Büro und formelle Anlässe."
+    },
+    {
+        "id": "p3",
+        "title": "Hiking Mountain Boot",
+        "category": "Outdoor",
+        "price": 189.5,
+        "image": "images/placeholder.svg",
+        "description": "Robuste Wanderstiefel mit wasserfester Membran und rutschfesten Sohlen für Bergtouren."
+    },
+    {
+        "id": "p4",
+        "title": "Summer Beach Sandal",
+        "category": "Sandalen",
+        "price": 49.99,
+        "image": "images/placeholder.svg",
+        "description": "Bequeme Strandsandalen aus hautfreundlichem Material mit ergonomischem Fußbett."
+    },
+    {
+        "id": "p5",
+        "title": "Winter Snow Boot",
+        "category": "Winter",
+        "price": 159.9,
+        "image": "images/placeholder.svg",
+        "description": "Wärmeisolierte Winterstiefel mit Gripp-Sohle und warmem Innenfutter für eisige Bedingungen."
+    },
+    {
+        "id": "p6",
+        "title": "Basketball Court Shoe",
+        "category": "Sport",
+        "price": 145.0,
+        "image": "images/placeholder.svg",
+        "description": "Performance-Basketballschuh mit hohem Schaft und Knöchelstütze."
+    },
+    {
+        "id": "p7",
+        "title": "Yoga & Pilates Slipper",
+        "category": "Training",
+        "price": 59.99,
+        "image": "images/placeholder.svg",
+        "description": "Leichte Trainingsschuhe mit Barfuß-Gefühl und rutschfester Sohle."
+    },
+    {
+        "id": "p8",
+        "title": "Premium Leather Loafer",
+        "category": "Casual",
+        "price": 169.0,
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsaulak.com%2Fcdn%2Fshop%2Ffiles%2F2.jpg%3Fv%3D1763477564&f=1&nofb=1&ipt=50449c7b33a30d3c892779421dcf2d314fbec0763e0334e4e0675f6fa2b8aa6b",
+        "description": "Hochwertige Lederslipper mit klassischem Design und edlem Finish."
+    },
+    {
+        "id": "p9",
+        "title": "Skateboard Chuck Style",
+        "category": "Sneaker",
+        "price": 79.99,
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.3-E10ZKugqdRt0mQhmtziQHaE7%3Fpid%3DApi&f=1&ipt=84cb9e1a9a0d5a98b3bffff3e94e5879bd9fe2ddca8cdde0efcb219182bc7c1e&ipo=images",
+        "description": "Ikonischer Canvas-Sneaker mit Gummikappe, ideal zum Skaten und für urbanen Style."
+    },
+    {
+        "id": "p10",
+        "title": "Trail Running Shoe",
+        "category": "Sport",
+        "price": 154.5,
+        "image": "images/placeholder.svg",
+        "description": "Leichte und wendige Trailrunner mit aggressivem Profil für Off-Road-Läufe."
+    }
 ]
