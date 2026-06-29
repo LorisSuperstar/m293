@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>StepStyle — Premium Schuhshop</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container">
+                <h1 class="logo">👟 StepStyle</h1>
+                <nav>
+                    <a href="Index.html" aria-current="page">Start</a>
+                    <a href="products.html">Schuhe</a>
+                    <a href="contact.html">Kontakt</a>
+                    <a href="cart.html"
+                        >Warenkorb (<span id="cart-count">0</span>)</a
+                    >
+                </nav>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="hero">
+                <h2>Neue Kollektion & Beliebte Modelle</h2>
+                <div class="products-grid">
+                    <article class="card">
+                        <a href="product-p1.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Urban Runner Pro"
+                            />
+                            <h4>Urban Runner Pro</h4>
+                            <p class="price">€129.99</p></a
+                        ><button
+                            onclick="
+                                addToCart('p1');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                    <article class="card">
+                        <a href="product-p2.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Classic Leather Oxford"
+                            />
+                            <h4>Classic Leather Oxford</h4>
+                            <p class="price">€199.99</p></a
+                        ><button
+                            onclick="
+                                addToCart('p2');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                    <article class="card">
+                        <a href="product-p3.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Hiking Mountain Boot"
+                            />
+                            <h4>Hiking Mountain Boot</h4>
+                            <p class="price">€189.50</p></a
+                        ><button
+                            onclick="
+                                addToCart('p3');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                    <article class="card">
+                        <a href="product-p4.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Summer Beach Sandal"
+                            />
+                            <h4>Summer Beach Sandal</h4>
+                            <p class="price">€49.99</p></a
+                        ><button
+                            onclick="
+                                addToCart('p4');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                </div>
+            </section>
+
+            <section class="categories">
+                <h3>Kategorien</h3>
+                <div class="chips">
+                    <a class="chip" href="products.html#Sneaker"
+                        >Sneaker</a
+                    >
+                    <a class="chip" href="products.html#Business">Business</a>
+                    <a class="chip" href="products.html#Sport">Sport</a>
+                    <a class="chip" href="products.html#Outdoor">Outdoor</a>
+                    <a class="chip" href="products.html#Casual">Casual</a>
+                </div>
+            </section>
+
+            <section class="newsletter">
+                <h3>Newsletter</h3>
+                <form>
+                    <label for="email-static">E-Mail</label>
+                    <input
+                        id="email-static"
+                        name="email"
+                        type="email"
+                        required
+                        placeholder="name@beispiel.de"
+                    />
+                    <button disabled>Abonnieren</button>
+                </form>
+                <p class="muted">Erhalten Sie exklusive Angebote und News zu neuen Schuhkollektionen</p>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <p>&copy; 2026 StepStyle — Ihr Premium Schuhshop</p>
+            </div>
+        </footer>
+
+        <script src="js/cart.js"></script>
+        <script src="js/site.js"></script>
+    </body>
+</html>

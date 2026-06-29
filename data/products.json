@@ -1,0 +1,12 @@
+[
+  {"id":"p1","title":"Urban Runner Pro","category":"Sneaker","price":129.99,"image":"images/placeholder.svg","description":"Hochwertige Laufschuhe mit Gel-Dämpfung und atmungsaktivem Mesh. Perfekt für tägliche Läufe und urbane Abenteuer."},
+  {"id":"p2","title":"Classic Leather Oxford","category":"Business","price":199.99,"image":"images/placeholder.svg","description":"Elegante Lederschuhe im klassischen Oxford-Stil. Ideal für Büro und formelle Anlässe."},
+  {"id":"p3","title":"Hiking Mountain Boot","category":"Outdoor","price":189.50,"image":"images/placeholder.svg","description":"Robuste Wanderstiefel mit wasserfester Membran und rutschfesten Sohlen für Bergtouren."},
+  {"id":"p4","title":"Summer Beach Sandal","category":"Sandalen","price":49.99,"image":"images/placeholder.svg","description":"Bequeme Strandsandalen aus hautfreundlichem Material mit ergonomischem Fußbett."},
+  {"id":"p5","title":"Winter Snow Boot","category":"Winter","price":159.90,"image":"images/placeholder.svg","description":"Wärmeisolierte Winterstiefel mit Gripp-Sohle und warmem Innenfutter für eisige Bedingungen."},
+  {"id":"p6","title":"Basketball Court Shoe","category":"Sport","price":145.00,"image":"images/placeholder.svg","description":"Performance-Basketballschuh mit hohem Schaft und Knöchelstütze."},
+  {"id":"p7","title":"Yoga & Pilates Slipper","category":"Training","price":59.99,"image":"images/placeholder.svg","description":"Leichte Trainingsschuhe mit Barfuß-Gefühl und rutschfester Sohle."},
+  {"id":"p8","title":"Premium Leather Loafer","category":"Casual","price":169.00,"image":"images/placeholder.svg","description":"Hochwertige Lederslipper mit klassischem Design und edlem Finish."},
+  {"id":"p9","title":"Skateboard Chuck Style","category":"Sneaker","price":79.99,"image":"images/placeholder.svg","description":"Ikonischer Canvas-Sneaker mit Gummikappe, ideal zum Skaten und für urbanen Style."},
+  {"id":"p10","title":"Trail Running Shoe","category":"Sport","price":154.50,"image":"images/placeholder.svg","description":"Leichte und wendige Trailrunner mit aggressivem Profil für Off-Road-Läufe."}
+]
