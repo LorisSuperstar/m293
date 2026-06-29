@@ -1,71 +1,65 @@
-# Dokumentation des KI-Einsatzes
+# KI-Dokumentation: Evaluation und Reflexion
 
-Projekt: Webshop mit KI-gestützter Webentwicklung (Projektauftrag 3)
+**Projekt-Titel:** Webshop Projekt  
+**Autor:** [Dein Name]  
+**Datum:** Juni 2026
 
-Kurzüberblick
-In diesem Projekt wurden mehrere AI-Tools eingesetzt, um Layout-, Code- und Textbausteine schnell zu erzeugen, Varianten zu prototypisieren und Dokumentation zu verfassen. Ziel war: 100% eigener HTML/CSS-Code in der Auslieferung bei gleichzeitiger Nutzung von AI-Assistenz während der Entwicklung.
+---
 
-Verwendete (kostenlose / lokal einbindbare) Tools
-- GitHub Copilot (IDE-Plugin): Eingesetzt in VS Code zur Live-Vervollständigung und Vorschlägen direkt beim Schreiben von HTML/CSS/JS. Viele Boilerplate-Elemente (Header, Grid-Layout, Karten) und CSS-Patterns wurden mit Copilot-Vorschlägen beschleunigt.
-- Ollama (lokaler LLM-Runner): Ollama wurde lokal betrieben, um kleinere LLM-Modelle für schnelle Snippet-Generierung und Textvarianten einzusetzen. Ollama erlaubt das Ausführen von Modellen lokal über eine einfache CLI (ohne externe API-Kosten).
+## 1. Evaluation der KI-Werkzeuge (IDE-integriert)
 
-Hinweis: Beide Tools wurden lokal bzw. in der Entwicklungsumgebung verwendet; es wurden keine kostenpflichtigen API-Aufrufe in den Produktionscode eingebaut.
+Für die Entwicklung dieses Web-Projekts stand die Bedingung im Vordergrund, dass die KI-Werkzeuge **direkt in die lokale Entwicklungsumgebung (z. B. VS Code) eingebunden werden können**, um den Workflow nicht zu unterbrechen. Es wurden zwei für Studierende kostenlose Werkzeuge evaluiert:
 
-Konkrete Integration in den Code
-1) GitHub Copilot
-- Nutzung: Copilot lief als VS Code-Erweiterung während des Codierens. Vorschläge wurden direkt im Editor akzeptiert oder angepasst.
-- Beispiele im Repository:
-  - css/styles.css enthält Grid- und Karten-Styles, die während des Tippens von Copilot vorgeschlagen und anschließend verfeinert wurden (z. B. .products-grid, .card, .no-image-Placeholder).
-  - HTML-Boilerplate (Header, Footer, Container-Struktur) wurde durch Copilot-Snippets beschleunigt.
-- Arbeitsweise: Vorschläge manuell prüfen, an Projekt-Styleguide anpassen, nicht blind übernehmen.
+1. **GitHub Copilot:** Integrierte Code-Assistenz direkt in der IDE (kostenlos für Studierende über das _GitHub Student Developer Pack_).
+2. **Codeium:** Eine KI-Erweiterung für die IDE, die in der Basisversion für Einzelpersonen und Studierende dauerhaft kostenlos ist und eine Alternative zu Copilot darstellt.
 
-2) Ollama (lokaler LLM-Runner)
-- Nutzung: Ollama wurde lokal eingesetzt, um schnell HTML/CSS-Snippets und Textvarianten zu erzeugen. Die Generierung erfolgte per CLI-Aufruf aus einem kleinen Node- oder Shell-Skript; Ergebnisse wurden in temporäre Dateien geschrieben und anschließend geprüft.
-- Typischer Workflow:
-  1. Entwickler formuliert einen Prompt (z. B. "Erzeuge eine kompakte Produktkarte in HTML mit Bild, Titel und Preis").
-  2. Ein kurzes Skript ruft die Ollama-CLI lokal auf und schreibt das Ergebnis in eine temporäre Datei (tmp/card.html).
-  3. Entwickler prüft den Vorschlag, passt Klassen/ARIA/Accessibility an und überführt die finale Variante in die Produktseiten (z. B. products.html oder product-pX.html).
-- Beispiel-Node-Skript (Prototyp):
+### Nutzwertanalyse (Scoring-Modell)
 
-```js
-// run-ollama.js (Beispiel)
-const { execSync } = require('child_process');
-const fs = require('fs');
-const prompt = 'Erzeuge eine kompakte Produktkarte in HTML mit Bild, Titel und Preis';
-// Annahme: 'ollama' ist lokal installiert und ein Modell (z.B. 'llama2') verfügbar
-const out = execSync(`ollama run llama2 --prompt "${prompt}"`);
-fs.writeFileSync('tmp/card.html', out.toString());
-console.log('Snippet in tmp/card.html geschrieben');
-```
+Die Bewertung erfolgt auf einer Skala von 1 (sehr schlecht) bis 5 (ausgezeichnet). Da die Integration in die Umgebung zwingend erforderlich war, ist dieses Kriterium am höchsten gewichtet.
 
-- Integration im Repo: Das erzeugte tmp/card.html diente als Vorschlag; nach manueller Prüfung wurde die passende Variante in die statischen Produktseiten übernommen.
+| Kriterium                           | Gewichtung | GitHub Copilot (Score) | GitHub Copilot (Gewichtet) | Codeium (Score) | Codeium (Gewichtet) |
+| :---------------------------------- | :--------: | :--------------------: | :------------------------: | :-------------: | :-----------------: |
+| **IDE-Integration & UI-Qualität**   |    35%     |           5            |            1.75            |        4        |        1.40         |
+| **Code-Vervollständigung (Inline)** |    25%     |           5            |            1.25            |        4        |        1.00         |
+| **In-IDE Chat & Debugging**         |    20%     |           4            |            0.80            |        4        |        0.80         |
+| **Kosten & barrierefreier Zugang**  |    10%     |           4            |            0.40            |        5        |        0.50         |
+| **Kontextverständnis im Projekt**   |    10%     |           5            |            0.50            |        3        |        0.30         |
+| **Gesamtergebnis**                  |  **100%**  |                        |          **4.70**          |                 |      **4.00**       |
 
-Beispiele, wo AI geholfen hat
-- Layout-Entscheidungen: verschiedene Grid-Varianten (1,2,4 Spalten) wurden schnell generiert und visuell verglichen.
-- HTML-Card-Varianten: Ollama lieferte mehrere Varianten, von denen die passendste manuell ausgesucht wurde.
-- Texte & Erklärungen: ChatGPT (Konversation) unterstützte die Formulierung von Dokumentationstexten; diese wurden geprüft und in ki_documentation.md übernommen.
+### Begründung der Werkzeugwahl
 
-Vergleich der verwendeten Tools (kurz)
-- Integration: Copilot (IDE) = nahtlos, Ollama (CLI) = leicht integrierbar in lokale Skripte
-- Ergebnisqualität: Copilot = gute Boilerplate; Ollama = nützliche Varianten und Textideen; ChatGPT = erklärungsstark für Dokumentation
-- Datenschutz/Offline: Ollama-Modelle können lokal betrieben werden (gute Datenschutzkontrolle); Copilot sendet Kontext an GitHub (siehe GitHub-Richtlinien)
+Beide Werkzeuge erfüllen die Anforderung, sich nahtlos als Extension in die IDE (VS Code) einzubinden. Die Wahl fiel im Projekt primär auf **GitHub Copilot**.
 
-Sicherheits- und Ethikhinweise
-- Alle automatisch erzeugten Codeschnipsel wurden manuell geprüft (Accessibility, License, Security).
-- Keine fremden, urheberrechtlich geschützten Inhalte wurden übernommen. Bei Bildern/Videos wurden Platzhalter genutzt; Produktbilder sollten beim Deployment durch lizenzfreie oder eigene Assets ersetzt werden.
+_Begründung:_ Copilot zeigte im Test ein überlegenes Kontextverständnis. Es "liest" geöffnete Nachbardateien (z. B. eine `styles.css` oder ein JavaScript-Modul) intelligenter mit und macht dadurch passgenauere Vorschläge für den aktuellen Codeabschnitt. **Codeium** wurde als starker, kostenloser Backup-Assistent evaluiert, falls der GitHub-Studierendenstatus abläuft oder die Verbindung zu den GitHub-Servern blockiert ist.
 
-Reproduzierbarkeit / Setup (kurz)
-- GitHub Copilot: Als VS Code Extension aktivieren (GitHub Account benötigt). Vorschläge erscheinen inline beim Tippen.
-- Ollama (lokal):
-  1. Ollama installieren (siehe https://ollama.ai für Anleitungen).
-  2. Modell lokal laden, z. B. `ollama pull llama2` (abhängig vom Modell und Lizenz).
-  3. Beispielskript ausführen: node run-ollama.js
+---
 
-Hinweis: Für einige Modelle sind größere Ressourcen (RAM/GPU) nötig; für kleine Modelle reicht typischerweise ein moderner CPU.
+## 2. Einsatz der KI im Projekt (Integration in die IDE)
 
-Fazit und Lernreflexion
-- Kombinierter Einsatz von IDE-Assistenz (Copilot) und lokalem LLM-Runner (Ollama) beschleunigte das Erzeugen und Vergleichen von UI-Varianten.
-- KI-Tools sind am effektivsten, wenn sie menschliches Review und gestalterische Entscheidungen unterstützen — nicht ersetzen.
+Der größte Vorteil der Integration war, dass kein Wechsel in den Browser (zu ChatGPT o.ä.) notwendig war. Der Einsatz erfolgte direkt im Editor:
 
-Kontakt / Referenz
-- Projekt-Root enthält Beispiele (wireframes.md, styleguide.md) und den tatsächlichen Code; diese Dokumentation beschreibt, wie die AI-Assistenz in den Entwicklungsfluss eingebettet wurde.
+1. **Inline-Vervollständigung (Autopilot):** Während des Tippens schlugen beide Werkzeuge grauen "Ghost-Text" vor, der einfach mit der `Tab`-Taste übernommen werden konnte.
+2. **In-Editor Chatsidebar:** Über das Seitenmenü der IDE konnten Fragen zu Codeabschnitten gestellt werden, ohne den Code zu verlassen.
+3. **Automatische Kommentare & Dokumentation:** Markierter Code wurde von der KI direkt im Editor mit passenden JSDoc-Kommentaren versehen.
+
+---
+
+## 3. Praktische Beispiele aus der Entwicklungsumgebung
+
+### Beispiel 1: Nutzen des In-IDE Chats für Refactoring (GitHub Copilot)
+
+_Ziel: Eine verschachtelte `if-else`-Struktur in modernen, lesbaren JavaScript-Code umwandeln._
+
+- **Vorgehen im Editor:** Code markieren, `Strg + I` (bzw. `Cmd + I`) drücken und den Befehl eingeben.
+- **Prompt in der IDE:** `/refactor Optimiere diese Funktion mit einem Clean-Code-Ansatz`
+- **Ergebnis direkt im Code-Fenster:** Die KI ersetzte das verschachtelte Konstrukt durch _Early Returns_ (Guard Clauses), was die Lesbarkeit im Projekt massiv verbesserte.
+
+### Beispiel 2: Inline-Generierung von CSS-Klassen (Codeium)
+
+_Ziel: Ein responsives Flexbox-Layout direkt beim Schreiben der CSS-Datei generieren._
+
+- **Eingabe im CSS-File:**
+    ```css
+    /* Responsive Navigation Bar mit Flexbox, zentrierten Items und Abstand dazwischen */
+    .navbar {
+    ```
