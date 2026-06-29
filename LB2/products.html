@@ -1,81 +1,252 @@
 <!doctype html>
 <html lang="de">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Schuhe — StepStyle</title>
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-  <header class="site-header container">
-    <h1 class="logo">👟 Schuhe</h1>
-    <nav>
-      <a href="Index.html">Start</a>
-      <a href="products.html" aria-current="page">Schuhe</a>
-      <a href="contact.html">Kontakt</a>
-      <a href="cart.html">Warenkorb (<span id="cart-count">0</span>)</a>
-    </nav>
-  </header>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Schuhe — StepStyle</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <header class="site-header container">
+            <h1 class="logo">👟 Schuhe</h1>
+            <nav>
+                <a href="index.html">Start</a>
+                <a href="products.html" aria-current="page">Schuhe</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="cart.html"
+                    >Warenkorb (<span id="cart-count">0</span>)</a
+                >
+            </nav>
+        </header>
 
-  <main class="container">
-    <section>
-      <h3>Kategorien</h3>
-      <div class="chips">
-        <a class="chip" href="#Sneaker">Sneaker</a>
-        <a class="chip" href="#Business">Business</a>
-        <a class="chip" href="#Outdoor">Outdoor</a>
-        <a class="chip" href="#Sport">Sport</a>
-        <a class="chip" href="#Casual">Casual</a>
-      </div>
-    </section>
+        <main class="container">
+            <section>
+                <h3>Kategorien</h3>
+                <div class="chips">
+                    <a class="chip" href="#Sneaker">Sneaker</a>
+                    <a class="chip" href="#Business">Business</a>
+                    <a class="chip" href="#Outdoor">Outdoor</a>
+                    <a class="chip" href="#Sport">Sport</a>
+                    <a class="chip" href="#Casual">Casual</a>
+                </div>
+            </section>
 
-    <section id="Sneaker">
-      <h2>Sneaker</h2>
-      <div class="products-grid">
-        <article class="card"><a href="product-p1.html"><img src="images/placeholder.svg" alt="Urban Runner Pro"><h4>Urban Runner Pro</h4><p class="price">€129.99</p></a><button onclick="addToCart('p1'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
-        <article class="card"><a href="product-p9.html"><img src="images/placeholder.svg" alt="Skateboard Chuck Style"><h4>Skateboard Chuck Style</h4><p class="price">€79.99</p></a><button onclick="addToCart('p9'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
-      </div>
-    </section>
+            <section id="Sneaker">
+                <h2>Sneaker</h2>
+                <div class="products-grid">
+                    <article class="card">
+                        <a href="product-p1.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Urban Runner Pro"
+                            />
+                            <h4>Urban Runner Pro</h4>
+                            <p class="price">€129.99</p></a
+                        ><button
+                            onclick="
+                                addToCart('p1');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                    <article class="card">
+                        <a href="product-p9.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Skateboard Chuck Style"
+                            />
+                            <h4>Skateboard Chuck Style</h4>
+                            <p class="price">€79.99</p></a
+                        ><button
+                            onclick="
+                                addToCart('p9');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                </div>
+            </section>
 
-    <section id="Business">
-      <h2>Business & Elegance</h2>
-      <div class="products-grid">
-        <article class="card"><a href="product-p2.html"><img src="images/placeholder.svg" alt="Classic Leather Oxford"><h4>Classic Leather Oxford</h4><p class="price">€199.99</p></a><button onclick="addToCart('p2'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
-        <article class="card"><a href="product-p8.html"><img src="images/placeholder.svg" alt="Premium Leather Loafer"><h4>Premium Leather Loafer</h4><p class="price">€169.00</p></a><button onclick="addToCart('p8'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
-      </div>
-    </section>
+            <section id="Business">
+                <h2>Business & Elegance</h2>
+                <div class="products-grid">
+                    <article class="card">
+                        <a href="product-p2.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Classic Leather Oxford"
+                            />
+                            <h4>Classic Leather Oxford</h4>
+                            <p class="price">€199.99</p></a
+                        ><button
+                            onclick="
+                                addToCart('p2');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                    <article class="card">
+                        <a href="product-p8.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Premium Leather Loafer"
+                            />
+                            <h4>Premium Leather Loafer</h4>
+                            <p class="price">€169.00</p></a
+                        ><button
+                            onclick="
+                                addToCart('p8');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                </div>
+            </section>
 
-    <section id="Outdoor">
-      <h2>Outdoor & Wanderschuhe</h2>
-      <div class="products-grid">
-        <article class="card"><a href="product-p3.html"><img src="images/placeholder.svg" alt="Hiking Mountain Boot"><h4>Hiking Mountain Boot</h4><p class="price">€189.50</p></a><button onclick="addToCart('p3'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
-        <article class="card"><a href="product-p5.html"><img src="images/placeholder.svg" alt="Winter Snow Boot"><h4>Winter Snow Boot</h4><p class="price">€159.90</p></a><button onclick="addToCart('p5'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
-      </div>
-    </section>
+            <section id="Outdoor">
+                <h2>Outdoor & Wanderschuhe</h2>
+                <div class="products-grid">
+                    <article class="card">
+                        <a href="product-p3.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Hiking Mountain Boot"
+                            />
+                            <h4>Hiking Mountain Boot</h4>
+                            <p class="price">€189.50</p></a
+                        ><button
+                            onclick="
+                                addToCart('p3');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                    <article class="card">
+                        <a href="product-p5.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Winter Snow Boot"
+                            />
+                            <h4>Winter Snow Boot</h4>
+                            <p class="price">€159.90</p></a
+                        ><button
+                            onclick="
+                                addToCart('p5');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                </div>
+            </section>
 
-    <section id="Sport">
-      <h2>Sport & Performance</h2>
-      <div class="products-grid">
-        <article class="card"><a href="product-p6.html"><img src="images/placeholder.svg" alt="Basketball Court Shoe"><h4>Basketball Court Shoe</h4><p class="price">€145.00</p></a><button onclick="addToCart('p6'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
-        <article class="card"><a href="product-p10.html"><img src="images/placeholder.svg" alt="Trail Running Shoe"><h4>Trail Running Shoe</h4><p class="price">€154.50</p></a><button onclick="addToCart('p10'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
-      </div>
-    </section>
+            <section id="Sport">
+                <h2>Sport & Performance</h2>
+                <div class="products-grid">
+                    <article class="card">
+                        <a href="product-p6.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Basketball Court Shoe"
+                            />
+                            <h4>Basketball Court Shoe</h4>
+                            <p class="price">€145.00</p></a
+                        ><button
+                            onclick="
+                                addToCart('p6');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                    <article class="card">
+                        <a href="product-p10.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Trail Running Shoe"
+                            />
+                            <h4>Trail Running Shoe</h4>
+                            <p class="price">€154.50</p></a
+                        ><button
+                            onclick="
+                                addToCart('p10');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                </div>
+            </section>
 
-    <section id="Casual">
-      <h2>Casual & Comfort</h2>
-      <div class="products-grid">
-        <article class="card"><a href="product-p4.html"><img src="images/placeholder.svg" alt="Summer Beach Sandal"><h4>Summer Beach Sandal</h4><p class="price">€49.99</p></a><button onclick="addToCart('p4'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
-        <article class="card"><a href="product-p7.html"><img src="images/placeholder.svg" alt="Yoga & Pilates Slipper"><h4>Yoga & Pilates Slipper</h4><p class="price">€59.99</p></a><button onclick="addToCart('p7'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button></article>
-      </div>
-    </section>
+            <section id="Casual">
+                <h2>Casual & Comfort</h2>
+                <div class="products-grid">
+                    <article class="card">
+                        <a href="product-p4.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Summer Beach Sandal"
+                            />
+                            <h4>Summer Beach Sandal</h4>
+                            <p class="price">€49.99</p></a
+                        ><button
+                            onclick="
+                                addToCart('p4');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                    <article class="card">
+                        <a href="product-p7.html"
+                            ><img
+                                src="images/placeholder.svg"
+                                alt="Yoga & Pilates Slipper"
+                            />
+                            <h4>Yoga & Pilates Slipper</h4>
+                            <p class="price">€59.99</p></a
+                        ><button
+                            onclick="
+                                addToCart('p7');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </article>
+                </div>
+            </section>
+        </main>
 
-  </main>
+        <footer class="site-footer container">
+            <p>&copy; 2026 StepStyle — Premium Schuhshop</p>
+        </footer>
 
-  <footer class="site-footer container">
-    <p>&copy; 2026 StepStyle — Premium Schuhshop</p>
-  </footer>
-
-  <script src="js/cart.js"></script>
-  <script src="js/site.js"></script>
-</body>
+        <script src="js/cart.js"></script>
+        <script src="js/site.js"></script>
+    </body>
 </html>

@@ -1,52 +1,94 @@
 <!doctype html>
 <html lang="de">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Premium Leather Loafer — StepStyle</title>
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-  <header class="site-header container">
-    <h1 class="logo">👟 Premium Leather Loafer</h1>
-    <nav>
-      <a href="Index.html">Start</a>
-      <a href="products.html">Schuhe</a>
-      <a href="contact.html">Kontakt</a>
-      <a href="cart.html">Warenkorb (<span id="cart-count">0</span>)</a>
-    </nav>
-  </header>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Premium Leather Loafer — StepStyle</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <header class="site-header container">
+            <h1 class="logo">👟 Premium Leather Loafer</h1>
+            <nav>
+                <a href="index.html">Start</a>
+                <a href="products.html">Schuhe</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="cart.html"
+                    >Warenkorb (<span id="cart-count">0</span>)</a
+                >
+            </nav>
+        </header>
 
-  <main class="container product-detail">
-    <article>
-      <h2>Premium Leather Loafer</h2>
-      <div class="detail-grid">
-        <div class="media-text">
-          <img src="images/placeholder.svg" alt="Premium Leather Loafer">
-          <video controls class="product-video" src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4">Ihr Browser unterstützt kein Video.</video>
-        </div>
-        <div class="meta">
-          <p class="price">€169.00</p>
-          <p>Hochwertige Lederslipper mit klassischem Design und edlem Finish.</p>
-          <form onsubmit="orderProduct('p8','Premium Leather Loafer', this); return false;">
-            <label for="qty-p8">Menge</label>
-            <input id="qty-p8" name="qty" type="number" value="1" min="1" />
-            <label for="name-p8">Name</label>
-            <input id="name-p8" name="name" required />
-            <label for="email-p8">E-Mail</label>
-            <input id="email-p8" name="email" type="email" required />
-            <button type="submit">Jetzt bestellen</button>
-          </form>
-          <button onclick="addToCart('p8'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button>
-        </div>
-      </div>
-    </article>
-  </main>
+        <main class="container product-detail">
+            <article>
+                <h2>Premium Leather Loafer</h2>
+                <div class="detail-grid">
+                    <div class="media-text">
+                        <img
+                            src="images/placeholder.svg"
+                            alt="Premium Leather Loafer"
+                        />
+                        <video
+                            controls
+                            class="product-video"
+                            src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+                        >
+                            Ihr Browser unterstützt kein Video.
+                        </video>
+                    </div>
+                    <div class="meta">
+                        <p class="price">€169.00</p>
+                        <p>
+                            Hochwertige Lederslipper mit klassischem Design und
+                            edlem Finish.
+                        </p>
+                        <form
+                            onsubmit="
+                                orderProduct(
+                                    'p8',
+                                    'Premium Leather Loafer',
+                                    this,
+                                );
+                                return false;
+                            "
+                        >
+                            <label for="qty-p8">Menge</label>
+                            <input
+                                id="qty-p8"
+                                name="qty"
+                                type="number"
+                                value="1"
+                                min="1"
+                            />
+                            <label for="name-p8">Name</label>
+                            <input id="name-p8" name="name" required />
+                            <label for="email-p8">E-Mail</label>
+                            <input
+                                id="email-p8"
+                                name="email"
+                                type="email"
+                                required
+                            />
+                            <button type="submit">Jetzt bestellen</button>
+                        </form>
+                        <button
+                            onclick="
+                                addToCart('p8');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </main>
 
-  <footer class="site-footer container">
-    <p>&copy; 2026 StepStyle — Premium Schuhshop</p>
-  </footer>
+        <footer class="site-footer container">
+            <p>&copy; 2026 StepStyle — Premium Schuhshop</p>
+        </footer>
 
-  <script src="js/cart.js"></script>
-</body>
+        <script src="js/cart.js"></script>
+    </body>
 </html>

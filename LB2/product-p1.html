@@ -1,52 +1,91 @@
 <!doctype html>
 <html lang="de">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Urban Runner Pro — StepStyle</title>
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-  <header class="site-header container">
-    <h1 class="logo">👟 Urban Runner Pro</h1>
-    <nav>
-      <a href="Index.html">Start</a>
-      <a href="products.html">Schuhe</a>
-      <a href="contact.html">Kontakt</a>
-      <a href="cart.html">Warenkorb (<span id="cart-count">0</span>)</a>
-    </nav>
-  </header>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Urban Runner Pro — StepStyle</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <header class="site-header container">
+            <h1 class="logo">👟 Urban Runner Pro</h1>
+            <nav>
+                <a href="index.html">Start</a>
+                <a href="products.html">Schuhe</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="cart.html"
+                    >Warenkorb (<span id="cart-count">0</span>)</a
+                >
+            </nav>
+        </header>
 
-  <main class="container product-detail">
-    <article>
-      <h2>Urban Runner Pro</h2>
-      <div class="detail-grid">
-        <div class="media-text">
-          <img src="images/placeholder.svg" alt="Urban Runner Pro">
-          <video controls class="product-video" src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4">Ihr Browser unterstützt kein Video.</video>
-        </div>
-        <div class="meta">
-          <p class="price">€129.99</p>
-          <p>Hochwertige Laufschuhe mit Gel-Dämpfung und atmungsaktivem Mesh. Perfekt für tägliche Läufe und urbane Abenteuer.</p>
-          <form onsubmit="orderProduct('p1','Urban Runner Pro', this); return false;">
-            <label for="qty-p1">Menge</label>
-            <input id="qty-p1" name="qty" type="number" value="1" min="1" />
-            <label for="name-p1">Name</label>
-            <input id="name-p1" name="name" required />
-            <label for="email-p1">E-Mail</label>
-            <input id="email-p1" name="email" type="email" required />
-            <button type="submit">Jetzt bestellen</button>
-          </form>
-          <button onclick="addToCart('p1'); updateCartCount(); alert('Produkt zum Warenkorb hinzugefügt');">In den Warenkorb</button>
-        </div>
-      </div>
-    </article>
-  </main>
+        <main class="container product-detail">
+            <article>
+                <h2>Urban Runner Pro</h2>
+                <div class="detail-grid">
+                    <div class="media-text">
+                        <img
+                            src="images/placeholder.svg"
+                            alt="Urban Runner Pro"
+                        />
+                        <video
+                            controls
+                            class="product-video"
+                            src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+                        >
+                            Ihr Browser unterstützt kein Video.
+                        </video>
+                    </div>
+                    <div class="meta">
+                        <p class="price">€129.99</p>
+                        <p>
+                            Hochwertige Laufschuhe mit Gel-Dämpfung und
+                            atmungsaktivem Mesh. Perfekt für tägliche Läufe und
+                            urbane Abenteuer.
+                        </p>
+                        <form
+                            onsubmit="
+                                orderProduct('p1', 'Urban Runner Pro', this);
+                                return false;
+                            "
+                        >
+                            <label for="qty-p1">Menge</label>
+                            <input
+                                id="qty-p1"
+                                name="qty"
+                                type="number"
+                                value="1"
+                                min="1"
+                            />
+                            <label for="name-p1">Name</label>
+                            <input id="name-p1" name="name" required />
+                            <label for="email-p1">E-Mail</label>
+                            <input
+                                id="email-p1"
+                                name="email"
+                                type="email"
+                                required
+                            />
+                            <button type="submit">Jetzt bestellen</button>
+                        </form>
+                        <button
+                            onclick="
+                                addToCart('p1');
+                                updateCartCount();
+                                alert('Produkt zum Warenkorb hinzugefügt');
+                            "
+                        >
+                            In den Warenkorb
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </main>
 
-  <footer class="site-footer container">
-    <p>&copy; 2026 StepStyle — Premium Schuhshop</p>
-  </footer>
+        <footer class="site-footer container">
+            <p>&copy; 2026 StepStyle — Premium Schuhshop</p>
+        </footer>
 
-  <script src="js/cart.js"></script>
-</body>
+        <script src="js/cart.js"></script>
+    </body>
 </html>
