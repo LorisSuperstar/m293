@@ -1,4 +1,4 @@
-# Projekt: StepStyle - Premium Schuhshop
+# Projekt: StepStyle
 
 Ein Webshop indem man Schuhe kaufen kann. 
 Ich habe diesen webshop für das Modul 293 entwickelt.
