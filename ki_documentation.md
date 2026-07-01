@@ -50,8 +50,8 @@ _Rechenbeispiel Codeium Code-Qualität:_ $6 * 0,40 = 2,40$
 - **Copilot dominiert bei der Leistung:** Durch die tolle Code-Qualität (40 % Gewichtung) und die Vergabe der Bestnote (10) setzt sich GitHub Copilot hier deutlich durch. Das gute Kontextverständnis macht sich stark bemerkbar.
 - **Gleichstand bei der Integration:** Beide Tools überzeugen mit einer bequemen Integration (9 Punkte) in gängige Entwicklungsumgebungen wie VS Code oder JetBrains.
 - **Vorteile im Funktionsumfang:** Copilot bietet dank dem GitHub-Ökosystem Ein Grösserer Funktionsumfang.
-- **Datenschutz als kleiner Bonus für Codeium:** Codeium behält einen leichten Vorsprung beim Datenschutz, da sie im Free-Tier sehr transparent und restriktiv mit den Daten der Nutzer umgehen und standardmäßig kein ungefragtes Training mit sensiblem Code durchführen.
+- **Datenschutz als kleiner Bonus für Codeium:** Codeium behält einen Vorsprung beim Datenschutz, da sie im Free-Tier restriktiv mit den Daten der Nutzer umgehen und standardmäßig kein ungefragtes Training mit sensiblem Code durchführen.
 
-#### Handlungsempfehlung
+#### Was ich in diesem Projekt benutzen werde
 
-Wenn die Kosten keine Rolle spielen (oder das Tool von der Schule oder dem Arbeitgeber bezahlt wird), ist **GitHub Copilot** aufgrund der überragenden Code-Qualität und des größeren Funktionsumfangs der klare Sieger. **Codeium** bleibt dennoch eine starke, solide Alternative für alle, die eine gut integrierte, kostenlose KI suchen, bei der man bei komplexen Aufgaben jedoch leichte Abstriche in der Detailgenauigkeit hinnehmen muss.
+In diesem Projekt werde ich copilot benutzen. Da er im Ranking höher steht.
